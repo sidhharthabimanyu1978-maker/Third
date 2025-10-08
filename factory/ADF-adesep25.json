@@ -1,0 +1,9 @@
+{
+	"name": "ADF-adesep25",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "41705d1e-a128-48b1-ae1a-790d123f2444",
+		"tenantId": "90225095-39cd-4a91-91b1-8f94508a4c1c"
+	}
+}
