@@ -11,6 +11,9 @@
 		"LS_SQL_password": {
 			"value": ""
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://kv-jan26.vault.azure.net/"
+		},
 		"LS_SQL_properties_typeProperties_server": {
 			"value": "adesqlserver25.database.windows.net"
 		},
