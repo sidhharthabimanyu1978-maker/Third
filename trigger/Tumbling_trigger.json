@@ -7,6 +7,10 @@
 			"pipelineReference": {
 				"referenceName": "PL_Tumbling",
 				"type": "PipelineReference"
+			},
+			"parameters": {
+				"p_start": "2025-09-26",
+				"p_end": "2025-09-30"
 			}
 		},
 		"type": "TumblingWindowTrigger",
