@@ -31,6 +31,14 @@
 			"type": "string",
 			"defaultValue": "Sidhharth"
 		},
+		"Tumbling_trigger_properties_pipeline_parameters_p_start": {
+			"type": "string",
+			"defaultValue": "2025-09-26"
+		},
+		"Tumbling_trigger_properties_pipeline_parameters_p_end": {
+			"type": "string",
+			"defaultValue": "2025-09-30"
+		},
 		"trigger1_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/af10c4cd-169e-451a-850c-d84fd440c49f/resourceGroups/RG-ADESEP25/providers/Microsoft.Storage/storageAccounts/stgadls25"
@@ -82,6 +90,12 @@
 					},
 					"trigger1_properties_typeProperties_scope": {
 						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
+					},
+					"Tumbling_trigger_properties_pipeline_parameters_p_start": {
+						"value": "[parameters('Tumbling_trigger_properties_pipeline_parameters_p_start')]"
+					},
+					"Tumbling_trigger_properties_pipeline_parameters_p_end": {
+						"value": "[parameters('Tumbling_trigger_properties_pipeline_parameters_p_end')]"
 					}
 				}
 			},

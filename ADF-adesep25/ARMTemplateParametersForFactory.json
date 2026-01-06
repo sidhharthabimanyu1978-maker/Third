@@ -23,6 +23,12 @@
 		"LS_SQL_properties_typeProperties_userName": {
 			"value": "Sidhharth"
 		},
+		"Tumbling_trigger_properties_pipeline_parameters_p_start": {
+			"value": "2025-09-26"
+		},
+		"Tumbling_trigger_properties_pipeline_parameters_p_end": {
+			"value": "2025-09-30"
+		},
 		"trigger1_properties_typeProperties_scope": {
 			"value": "/subscriptions/af10c4cd-169e-451a-850c-d84fd440c49f/resourceGroups/RG-ADESEP25/providers/Microsoft.Storage/storageAccounts/stgadls25"
 		}
