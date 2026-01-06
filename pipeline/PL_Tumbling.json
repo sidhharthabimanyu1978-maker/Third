@@ -1,0 +1,52 @@
+{
+	"name": "PL_Tumbling",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[TUMBLING_WINDOW_PROC_new]",
+					"storedProcedureParameters": {
+						"ENDDATE": {
+							"value": {
+								"value": "@pipeline().parameters.p_end",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"STARTDATE": {
+							"value": {
+								"value": "@pipeline().parameters.p_start",
+								"type": "Expression"
+							},
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_SQL",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"p_start": {
+				"type": "string"
+			},
+			"p_end": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
