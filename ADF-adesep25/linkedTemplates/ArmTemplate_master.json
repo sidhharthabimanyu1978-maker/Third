@@ -31,6 +31,10 @@
 			"type": "string",
 			"defaultValue": "Sidhharth"
 		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/af10c4cd-169e-451a-850c-d84fd440c49f/resourceGroups/RG-ADESEP25/providers/Microsoft.Storage/storageAccounts/stgadls25"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -75,6 +79,9 @@
 					},
 					"LS_SQL_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SQL_properties_typeProperties_userName')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
