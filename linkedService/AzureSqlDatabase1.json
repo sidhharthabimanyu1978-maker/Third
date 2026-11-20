@@ -1,0 +1,29 @@
+{
+	"name": "AzureSqlDatabase1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"Server_name": {
+				"type": "string"
+			},
+			"DB_name": {
+				"type": "string"
+			},
+			"Username": {
+				"type": "String",
+				"defaultValue": "Sidhharth"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "@{linkedService().Server_name}",
+			"database": "@{linkedService().DB_name}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().Username}",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQENEN0Q4QkM5LTM5MzgtNDZDNy1BN0JDLTcwODVGN0YzRDc2M184Y2VjZDIyYy00N2Y4LTRkYWItOTU3OS01YzUzODE5OWE5MjYiDQp9"
+		}
+	}
+}
